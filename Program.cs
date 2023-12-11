@@ -22,9 +22,9 @@ class Program
                     DateTime etcTime = TimeZoneInfo.ConvertTimeFromUtc(lastShutdown, etcZone);
 
                     TimeSpan uptime = DateTime.UtcNow.Subtract(lastShutdown);
-                    Console.WriteLine($"Last boot time (UTC): {lastShutdown}");
-                    Console.WriteLine($"Last boot time (ETC): {etcTime}");
-                    Console.WriteLine($"System uptime: {uptime}");
+                    Console.WriteLine("Last boot time (UTC): {0}", lastShutdown);
+                    Console.WriteLine("Last boot time (ETC): {0}", etcTime);
+                    Console.WriteLine("System uptime: {0}", uptime);
                 }
             }
         }
